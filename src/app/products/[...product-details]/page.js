@@ -1,6 +1,9 @@
 import React from 'react'
 
-function page() {
+async function page({params}) {
+  const data = await params;
+  console.log(data);
+  
   return (
     <div>
       Slug details page
