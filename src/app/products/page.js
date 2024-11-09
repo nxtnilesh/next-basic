@@ -1,6 +1,9 @@
 import React from 'react'
 
-function page() {
+async function page({searchParams}) {
+  const search = await searchParams;
+  console.log(search.search);
+  
   return (
     <div>
       Products page
